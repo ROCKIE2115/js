@@ -6,6 +6,10 @@
 </HEAD> 
 <BODY> 
 <SCRIPT> 
+function okno_zamknij_bielecki()  
+{ 
+window.close() 
+} 
 document.write("1) Kiedy powstał JavaScrip (podaj date)".fontsize(5).bold()+"<br> 1995 roku<br><br>"); 
 document.write("2)dlaczego jest to język skryptowy".fontsize(5).bold()+"<br>  językiem skryptowym – to znaczy interpretowanym. Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. <br><br>"); 
 document.write("3)gdzie jest wykonywany JS   (klient lub serwer)".fontsize(5).bold()+"<br>Klient <br><br>"); 
@@ -19,5 +23,8 @@ document.write("10)Przepisz linie kody pod nimi wytłumaczenie jak działa ten f
 document.write("11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu".fontsize(5).bold()+"<br> window.open(&#34obraz.html&#34,&#34okienko&#34,&#34toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200&#34); <br> <b>toolbar=no</b> - ukrywa pasek narzędzi <br> <b>directories=no</b> - ukrywa przyciski katalogów <br> <b>menubar=no</b> - ukrywa menu przeglądarki <br> <b>height=280</b> - wysokość okna <br> <b>width=160</b> - szerokość okna <br> <b>top=200</b> - położenie okna względem góry ekranu <br> <b>left=200</b> - położenie okna względem lewej strony ekranu<br><br>"); 
 document.write("12)Opisz następującą instrukcję window.close()".fontsize(5).bold()+"<br> Służy do zamknięcia aktualnego okna. "); 
 </SCRIPT> 
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bielecki()"/>
+</form>
 </BODY> 
 </HTML>

@@ -8,10 +8,17 @@
 <BODY>
  Mam numer w dzienniku 3<br>obramowanie ze znaków !<br>numer koloru obramowania to 14 -> blue<br>numer koloru tekstu to 7 -> purple<br>
 <SCRIPT> 
+function okno_zamknij_bielecki()  
+{ 
+window.close() 
+} 
 document.write("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!".fontcolor("#0000FF ")+"<br>"); 
 document.write("!".fontcolor("#0000FF")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kuba ".fontcolor("purple")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!".fontcolor("#0000FF ")+"<br>"); 
 document.write("!".fontcolor("#0000FF ")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bielecki ".fontcolor("purple")+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!".fontcolor("#0000FF ")+"<br>"); 
 document.write("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!".fontcolor("#0000FF ")+"<br>"); 
 </SCRIPT> 
+    <form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bielecki()"/>
+</form>
 </BODY> 
 </HTML>
