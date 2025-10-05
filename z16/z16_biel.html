@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <div style="color:green;font-size: 50px;">
+            <script language="JavaScript">
+                var a_bie=prompt ("Podaj pierwszą liczbę A=","");
+                var b_bie=prompt ("Podaj drugą liczbę B=","");
+                var f_bie;
+                var g_bie;
+                var h_bie;
+                var i_bie;
+                var v_bie;
+                var d_bie=parseFloat(a_bie);
+                var e_bie=parseFloat(b_bie);
+                f_bie=(d_bie*d_bie*d_bie);
+                g_bie=3*(d_bie*d_bie*d_bie)*e_bie;
+                h_bie=3*d_bie*(e_bie*e_bie);
+                i_bie=(e_bie*e_bie*e_bie)
+                v_bie=f_bie+g_bie+h_bie+i_bie;
+                document.write("("+a_bie+" + "+b_bie+")^3="+a_bie+"^3 + 3*(("+a_bie+")^2)*("+b_bie+") + 3*("+a_bie+")*(("+b_bie+")^2) + "+b_bie+"^3 = "+f_bie+" + "+g_bie+" + "+h_bie+" + "+i_bie+" = "+v_bie+"<br>");
+                                function okno_zamknij_bielecki() 
+                 { 
+                   window.close() 
+                 } 
+            </script>
+        </div>
+        <input type="button" value="zamknij okno" onclick="okno_zamknij_bielecki()"/> 
+    </body>
+</html>
