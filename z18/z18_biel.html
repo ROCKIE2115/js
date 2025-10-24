@@ -1,0 +1,38 @@
+<!DOCTYPE html>   
+<head>    
+<title> Użycie fukcji </title>    
+<meta charset="utf-8">   
+</head>  
+<body> 
+<div style="color:navy;font-size:50px;"> 
+<script language="JavaScript"> 
+var a=parseFloat(prompt("a=","")); 
+var b=parseFloat(prompt("b=","")); 
+function suma_bie(a, b) { 
+return a + b; 
+} 
+function odejm_bie(a, b) { 
+return a - b; 
+} 
+function mnozenie_bie(a, b){
+    return a*b;
+}
+function kwadrat_a_bie(a){
+    return a*a;
+}
+function kwadrat_b_bie(b){
+    return b*b;
+}
+function dzielenie_bie(a,b){
+    return a%b;
+}
+document.write("suma="+suma_bie(a,b)+"<br>");
+document.write("odejmowanie="+odejm_bie(a,b)+"<br>");
+document.write("mnożenie="+mnozenie_bie(a,b)+"<br>");
+document.write("kwadrat "+a+"^2 = "+kwadrat_a_bie(a)+"<br>");
+document.write("kwadrat "+b+"^2 = "+kwadrat_b_bie(b)+"<br>"); 
+document.write("reszta z dzielenia = "+dzielenie_bie(a,b)+"<br>"); 
+</script> 
+</div> 
+</body> 
+</html> 
