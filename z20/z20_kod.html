@@ -1,0 +1,55 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="90"> 
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript">  
+  function ab_bie() 
+   { 
+var xa_bie= parseFloat(document.getElementById('xa_bie').value); 
+var ya_bie= parseFloat(document.getElementById('ya_bie').value);
+var xb_bie= parseFloat(document.getElementById('xb_bie').value); 
+var yb_bie= parseFloat(document.getElementById('yb_bie').value);
+ var wynik = Math.sqrt(Math.pow(xa_bie - xb_bie, 2) + Math.pow(ya_bie - yb_bie, 2));
+  document.getElementById("nazwa").innerHTML = "Długość odcinka AB = " + wynik.toFixed(2) + "";
+    }
+function bc_bie() 
+   { 
+var xb_bie= parseFloat(document.getElementById('xb_bie').value); 
+var yb_bie= parseFloat(document.getElementById('yb_bie').value);
+var xc_bie= parseFloat(document.getElementById('xc_bie').value); 
+var yc_bie= parseFloat(document.getElementById('yc_bie').value);
+ var wynik = Math.sqrt(Math.pow(xb_bie - xc_bie, 2) + Math.pow(yb_bie - yc_bie, 2));
+  document.getElementById("nazwa").innerHTML = "Długość odcinka BC = " + wynik.toFixed(2) + "";
+    }
+function ac_bie() 
+   { 
+var xa_bie= parseFloat(document.getElementById('xa_bie').value); 
+var ya_bie= parseFloat(document.getElementById('ya_bie').value);
+var xc_bie= parseFloat(document.getElementById('xc_bie').value); 
+var yc_bie= parseFloat(document.getElementById('yc_bie').value);
+ var wynik = Math.sqrt(Math.pow(xa_bie - xc_bie, 2) + Math.pow(ya_bie - yc_bie, 2));
+  document.getElementById("nazwa").innerHTML = "Długość odcinka AC = " + wynik.toFixed(2) + "";
+    }
+ </script> 
+  <h1>Długości między punktami</h1><br><br> 
+  Podaj punkt Xa: <input type="text" id="xa_bie" value="podaj punkt"><br><br>
+  Podaj punkt Yb: <input type="text" id="ya_bie" value="podaj punkt"><br><br>
+  Podaj punkt Xb: <input type="text" id="xb_bie" value="podaj punkt"><br><br> 
+  Podaj punkt Yb: <input type="text" id="yb_bie" value="podaj punkt"><br><br>
+  Podaj punkt Xc: <input type="text" id="xc_bie" value="podaj punkt"><br><br>
+  Podaj punkt Yc: <input type="text" id="yc_bie" value="podaj punkt"><br><br>
+  
+  <input type="button" name="dlugosc" value="Długość AB" Onclick="ab_bie()"><br><br>  
+  <input type="button" name="dlugoscbc" value="Długość BC" Onclick="bc_bie()"><br><br> 
+  <input type="button" name="dlugoscac" value="Długość AC" Onclick="ac_bie()"><br><br> 
+  <div  style="color:red;font-size:50px;"id="nazwa"></div> 
+</body> 
+</html> 
+      </textarea> 
+    </body> 
+</html> 
