@@ -1,0 +1,45 @@
+<html>  
+<head>   
+<script language="JavaScript"> 
+function pole_bielecki(a_bie,b_bie) 
+{ 
+a_dana_bie=parseFloat(a_bie) 
+b_dana_bie=parseFloat(b_bie) 
+pole_wynik=a_dana_bie*b_dana_bie;
+document.getElementsByName('pole')[0].value=pole_wynik.toFixed(2); 
+alert("Pole="+pole_wynik.toFixed(2)+" cm^2");                         /*do okna Alert */                         
+wyprowadz_pole_bie.innerHTML="Pole="+pole_wynik.toFixed(2)+" cm^2"+"<br>";       /* do tabeli */ 
+} 
+function obwod_bielecki(a_bie,b_bie) 
+{ 
+a_dana_bie=parseFloat(a_bie) 
+b_dana_bie=parseFloat(b_bie) 
+   obwod_wynik=(2*a_dana_bie)+(2*b_dana_bie);
+document.getElementsByName('obw')[0].value=obwod_wynik.toFixed(2); 
+   alert("Obwów="+obwod_wynik.toFixed(2)+" cm"); 
+wyprowadz_obowod_bie.innerHTML="Obwód="+obwod_wynik.toFixed(2)+"cm"; 
+} 
+       </script> 
+</head>  
+<body>  
+Obliczanie pola i obwodu prostokąta
+<br> <br> 
+<form name="formularz" action="..." onsubmit="pole_bielecki(this.boka.value,this.bokb.value); 
+obwod_bielecki(this.boka.value,this.bokb.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="boka"> 
+     Podaj b= 
+        <input  size="6"  name="bokb"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+      Pole=
+           <input  size="6"  name="pole"> 
+       Obwód= 
+          <input  size="6"  name="obw"> 
+</form> 
+<table> 
+              <tr id="wyprowadz_pole_bie"></tr> 
+              <tr id="wyprowadz_obowod_bie"></tr> 
+</table> 
+</body> 
