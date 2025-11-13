@@ -4,19 +4,19 @@
 <html>  
 <head>   
 <script language="JavaScript"> 
-function drabina_bielecki(podd,podx) 
+function drabinalecki(d,x) 
 { 
-a_bie=parseFloat(podd) 
-b_bie=parseFloat(podx) 
-drabina_wynik=Math.sqrt(Math.pow(a_bie,2)+Math.pow(b_bie,2));
+a=parseFloat(d) 
+b=parseFloat(x) 
+drabina_wynik=Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
 document.getElementsByName('drabina')[0].value=drabina_wynik.toFixed(2);
    alert("Drabina="+drabina_wynik.toFixed(2)+"");                        
 } 
-function alfa_bielecki(podd,podx) 
+function alfalecki(d,x) 
 { 
-a_bie=parseFloat(podd) 
-b_bie=parseFloat(podx) 
-var sinA = a_bie/Math.sqrt((a_bie*a_bie)+(b_bie*b_bie));
+a=parseFloat(d) 
+b=parseFloat(x) 
+var sinA = a/Math.sqrt((a*a)+(b*b));
 var aRad = Math.asin(sinA);
 var aDeg = aRad*(180/Math.PI);
 alfa_wynik =aDeg;
@@ -28,12 +28,12 @@ document.getElementsByName('alfa')[0].value=alfa_wynik.toFixed(2);
 <body>  
 Obliczanie wysokość drabiny i alfe
 <br> <br> 
-<form name="formularz" action="..." onsubmit="drabina_bielecki(this.podd.value,this.podx.value); 
-alfa_bielecki(this.podd.value,this.podx.value);return false">   
+<form name="formularz" action="..." onsubmit="drabinalecki(this.d.value,this.x.value); 
+alfalecki(this.d.value,this.x.value);return false">   
      Podaj d= 
-        <input  size="6"  name="podd"> 
+        <input  size="6"  name="d"> 
      Podaj x= 
-        <input  size="6"  name="podx"> 
+        <input  size="6"  name="x"> 
                        <br>   <br> 
          <input  TYPE="submit"  Value="oblicz" > 
                        <br>   <br> 
@@ -43,6 +43,7 @@ alfa_bielecki(this.podd.value,this.podx.value);return false">
           <input  size="6"  name="alfa"> 
 </form> 
 </body> 
+</html>
       </textarea> 
     </body> 
 </html> 
