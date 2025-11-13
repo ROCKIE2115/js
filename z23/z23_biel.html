@@ -8,7 +8,6 @@ b_bie=parseFloat(podx)
 drabina_wynik=Math.sqrt(Math.pow(a_bie,2)+Math.pow(b_bie,2));
 document.getElementsByName('drabina')[0].value=drabina_wynik.toFixed(2);
    alert("Drabina="+drabina_wynik.toFixed(2)+"");                        
-wyprowadz_drabine_bie.innerHTML="Drabina="+drabina_wynik.toFixed(2)+"<br>";
 } 
 function alfa_bielecki(podd,podx) 
 { 
@@ -20,7 +19,6 @@ var aDeg = aRad*(180/Math.PI);
 alfa_wynik =aDeg;
 document.getElementsByName('alfa')[0].value=alfa_wynik.toFixed(2); 
    alert("Alfa="+alfa_wynik.toFixed(2)+""); 
-wyprowadz_alfe_bie.innerHTML="Alfa="+alfa_wynik.toFixed(2)+"<br>"; 
 } 
        </script> 
 </head>  
@@ -41,8 +39,4 @@ alfa_bielecki(this.podd.value,this.podx.value);return false">
       Alfa= 
           <input  size="6"  name="alfa"> 
 </form> 
-<table> 
-              <tr id="wyprowadz_drabine_bie"></tr> 
-              <tr id="wyprowadz_alfe_bie"></tr> 
-</table> 
 </body> 
