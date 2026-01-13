@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <textarea cols="90" rows="40">
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function dom(wysokość_k,cena_k,metraż_k,ogrod_k)//początek konstruktora 
+  { 
+   this.wysokość=wysokość_k; 
+   this.cena=cena_k; 
+   this.metraż=metraż_k; 
+   this.ogrod=ogrod_k;  
+  }//koniec konstruktora 
+              dom.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.wysokość + ' ' + this.cena+ ' ' + this.metraż+ ' ' + this.ogrod); 
+      }; 
+  var dom1 = new dom("10m", "1 000 000zł", "150m^2", "Tak"); // nowy obiekt dom1
+  var dom2 = new dom("12m", "1 200 000zł", "180m^2", "Nie"); 
+  var dom3 = new dom("15m", "1 500 000zł", "200m^2", "Tak");
+  dom1.wypisz(); // uruchomienie metody wypisz() dotyczącej dom 1 
+  dom2.wypisz(); 
+  dom3.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól dom1 
+     document.write("dom pierwszy"+" "+dom1.wysokość+" "+dom1.cena+" "+dom1.metraż+" "+dom1.ogrod+"<br>"); 
+     document.write("dom pierwszy"+" "+dom2.wysokość+" "+dom2.cena+" "+dom2.metraż+" "+dom2.ogrod+"<br>"); 
+     document.write("dom pierwszy"+" "+dom3.wysokość+" "+dom3.cena+" "+dom3.metraż+" "+dom3.ogrod+"<br>"); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>
+    </textarea>
+  </body>
+</html>
