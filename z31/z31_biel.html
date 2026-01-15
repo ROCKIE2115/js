@@ -14,6 +14,10 @@
   dom.rok_budowy=2020; 
   dom.wypisz=function() {alert('Rok budowy: ' + this.rok_budowy + 'r.')} 
   dom.wypisz(); 
+function okno_zamknij_bielecki()  
+{ 
+window.close() 
+} 
             </script> 
      </head> 
 <body> 
@@ -27,5 +31,9 @@
      metoda: pokaz<br> 
      nowe pole to rok budowy <br> 
      nowa metoda to wypisz();<br> 
+             <form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bielecki()"/>
+</form>
 </body> 
+
 </html> 
