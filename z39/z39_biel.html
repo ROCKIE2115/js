@@ -1,0 +1,24 @@
+<html> 
+   <head>
+      <meta charset="utf-8">
+       <title>Bielecki Z39_JS</title>
+   </head>
+ <body> 
+   <p style="color: green;font-weight: bold;font-size: 50px;">MENU</p>
+   <p style="color: red;font-weight: bold;font-size: 30px;">1-CZERWONY</p>
+   <p style="color: blue;font-weight: bold;font-size: 30px;">2-NIEBIESKI</p>
+<input type="button" name="bielecki" value="Oblicz" onclick="fun_bie()" />
+ <script>
+ function fun_bie() {
+ var x_bie = prompt("Podaj kolor", "");
+ if(x_bie == 1 || x_bie.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_bie == 2 || x_bie.toLowerCase() == "niebieski") {
+document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />');
+}
+}
+</script>
+
+ </body> 
+</html> 
+<!-- Bielecki Z39_JS -->
