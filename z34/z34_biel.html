@@ -1,0 +1,65 @@
+<html>   
+<head>      
+<meta charset="utf-8">   
+</head>  
+<script>
+function okno_zamknij_bielecki()  
+{ 
+window.close() 
+} 
+</script>
+<body> 
+    <div style="font-family: Arial;">
+<ol type="1">
+    <h1><li>Instrukcja wyboru -> składania teoretyczna.</h1></li>
+    <textarea cols="90" rows="9">
+if (warunek_logiczny1)
+{
+ // instrukcje jeśli warunek_logiczny1 prawdziwy
+}
+if (warunek_logiczny2)
+{
+ // instrukcje jeśli warunek_logiczny2 prawdziwy
+}
+    </textarea>
+<h1><li>Instrukcja wyboru -> schemat blokowy.</li></h1>
+<img src="z1.png"><br>
+<h1><li>Instrukcja alternatywy -> składania teoretyczna.</h1></li>
+    <textarea cols="90" rows="9">
+if (warunek_logiczny)
+{
+ // instrukcje jeśli warunek_logiczny prawdziwy
+}
+else
+{
+ // instrukcje jeśli warunek_logiczny fałszywy
+}
+    </textarea>
+<h1><li>Instrukcja alternatywy -> schemat blokowy.</li></h1>
+<img src="z2.png"><br>
+<h1><li>Operatory porównania.</li></h1>
+    <textarea cols="90" rows="7">
+==  jest równe   2==3   wynik -> fałsz
+!=  nie jest równe 2!=3 wynik -> prawda
+>   jest większe 25>3 wynik -> prawda
+<   jest mniejsze 2<3 wynik -> prawda
+>=  większe lub równe 25>=3 wynik -> prawda
+<=  mniejsze lub równe 2<=3 wynik -> prawda
+    </textarea>
+<h1><li>Uwaga do operatorów porównania.</li></h1>
+Należy odróżnić == ( dwa razy ) od = (jeden raz)<Br>
+== ( dwa razy ) -> instrukcja PORÓWNANIA<br>
+= (jeden raz) -> instrukcja PRZYPISANIA np. a=5;<br>
+<h1><li>Operatory logiczne.</li></h1>
+    <textarea cols="90" rows="4">
+&& i x=3 y=4 (x < 9 && y > 2) wynik->prawda
+|| lub x=3 y=4 (x==8 || y==6) wynik->fałsz
+! zaprzeczenie x=3 y=4 !(x==y) wynik->prawda
+    </textarea>
+</ol>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_bielecki()"/>
+</form>
+</div>
+</body> 
+</html> 
