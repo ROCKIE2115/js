@@ -1,0 +1,21 @@
+<html>
+<head>
+   <title>Bielecki Z49_JS</title>
+   <meta charset="UTF-8">
+</head>
+
+<body>
+   <div style="color:red;font-size:50px;">
+      <script language="JavaScript">
+         do {
+           var a_bie=parseFloat(prompt("bok a=",""));
+           var b_bie=parseFloat(prompt("bok b=",""));
+           var c_bie=parseFloat(prompt("bok c=",""));
+           document.write("sprawdzam warunki dla trójkąta dla wczytanych danych"+"<br>");
+         }
+         while (!((a_bie>0)&&(b_bie>0)&&(c_bie>0)&&(a_bie+b_bie>c_bie)&&(a_bie+c_bie>b_bie)&&(c_bie+b_bie>a_bie)));
+         document.write("Wyrok: trójkąt się zamyka oraz boki są dodatnie");
+      </script>
+   </div>
+</body>
+</html>
