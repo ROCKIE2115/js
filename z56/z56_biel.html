@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Bielecki Z56_JS </title>
+    <script language="JavaScript">
+        var imie_bie = prompt("Podaj imię:");
+        var nazwisko_bie = prompt("Podaj nazwisko:");
+
+        var a_bie = (nazwisko_bie.length % 4) + 5;
+        var b_bie = (imie_bie.length % 6) + 20;
+
+        for (var j_bie = 1; j_bie <= b_bie; j_bie++) {
+            document.write("*");
+        }
+        document.write("<br>");
+        for (var i_bie = 1; i_bie <= a_bie - 2; i_bie++) {
+            document.write("*");
+            for (var j_bie = 1; j_bie <= b_bie - 2; j_bie++) {
+                document.write("&nbsp;&nbsp;");
+            }
+            document.write("*<br>");
+        }
+        for (var j_bie = 1; j_bie <= b_bie; j_bie++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>
