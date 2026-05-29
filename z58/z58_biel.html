@@ -4,12 +4,18 @@
     <title> Bielecki Z58_JS </title>
     </head>
     <body>
-        <div style="color: red;font-size: 18px;">
+        <div style="color: red;font-size: 18px;" id="wynik">
     <script language="JavaScript">
-for(i=0;i<=39;i++){
-    w_bie=i*i+i+41;
-    document.write("w("+i+")="+" "+w_bie+"<br>");
-}
+document.write("Naciśnij dowolny przycisk:<br><br>");
+var licznik=0;
+document.addEventListener("keydown",function(){
+    for(i=licznik;i<licznik+4&&i<=39;i++){
+        w_bie=i*i+i+41;
+        document.getElementById("wynik").innerHTML+="w("+i+")="+" "+w_bie+"<br>";
+    }
+    licznik+=4;
+    if(licznik>39)licznik=0;
+});
     </script>
     </div>
 </body>
